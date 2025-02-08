@@ -23,7 +23,7 @@ const Header = () => {
               </div>
               <h1 className="ml-3 text-xl font-bold">
                 <span className="text-red-600">SHLOK</span>
-                <span className="text-white ml-2 text-lg">Investigation & Security Services</span>
+                <span className="text-white ml-2 text-lg">Security & Investigation Services</span>
               </h1>
             </Link>
 

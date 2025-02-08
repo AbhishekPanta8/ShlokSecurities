@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-red-600 mb-4">SHLOK Security</h3>
+            <h3 className="text-xl font-bold text-red-600 mb-4">SHLOK Security & Investigation Services</h3>
             <p className="text-gray-300 mb-4">
               Professional security and investigative services available 24/7 throughout Ontario, Canada.
             </p>
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} SHLOK Security. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SHLOK Security and Investigation Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

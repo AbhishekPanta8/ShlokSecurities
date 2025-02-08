@@ -26,7 +26,7 @@ const MissionSection = () => {
           
           {/* Title with sliding animation */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 transform transition-all duration-500 group-hover:translate-x-2">
-            Our Mission
+            About Us
           </h2>
           
           {/* Mission text with fade-in effect */}

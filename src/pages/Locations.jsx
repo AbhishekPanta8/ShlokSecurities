@@ -9,46 +9,41 @@ const Locations = () => {
       id: 1,
       city: 'Windsor',
       region: 'Downtown',
-      address: '100 Ouellette Ave, Windsor, ON N9A 6T3',
       phone: '+1 647-862-3601',
       hours: 'Open 24/7',
-      services: ['Security', 'Investigation', 'Surveillance']
+      services: ['Security', 'Investigation', 'Patrol','Monitoring', 'Events']
     },
     {
       id: 2,
       city: 'Tecumseh',
       region: 'Town Centre',
-      address: '200 Manning Rd, Tecumseh, ON N8N 4W6',
       phone: '+1 647-862-3601',
       hours: 'Open 24/7',
-      services: ['Security', 'Investigation', 'Patrol']
+      services: ['Security', 'Investigation', 'Patrol','Monitoring', 'Events']
     },
     {
       id: 3,
       city: 'LaSalle',
       region: 'Heritage District',
-      address: '300 Malden Rd, LaSalle, ON N9J 3T9',
       phone: '+1 647-862-3601',
       hours: 'Open 24/7',
-      services: ['Security', 'Investigation', 'Monitoring']
+      services: ['Security', 'Investigation', 'Monitoring','Patrol', 'Events']
     },
     {
       id: 4,
       city: 'Leamington',
       region: 'Waterfront',
-      address: '400 Erie St S, Leamington, ON N8H 3E5',
       phone: '+1 647-862-3601',
       hours: 'Open 24/7',
-      services: ['Security', 'Investigation', 'Events']
+      services: ['Security', 'Investigation','Monitoring', 'Patrol', 'Events']
     },
     {
       id: 5,
       city: 'Amherstburg',
       region: 'Historic Core',
-      address: '500 Sandwich St, Amherstburg, ON N9V 3B5',
       phone: '+1 647-862-3601',
       hours: 'Open 24/7',
-      services: ['Security', 'Investigation', 'Consultation']
+      services: ['Security', 'Investigation', 'Monitoring','Patrol', 'Events']
     }
   ];
 
@@ -93,10 +88,10 @@ const Locations = () => {
 
                 {/* Details */}
                 <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
+                  {/* <div className="flex items-start space-x-3">
                     <Building className="w-5 h-5 text-gray-500 mt-1" />
                     <p className="text-gray-300 text-sm">{location.address}</p>
-                  </div>
+                  </div> */}
                   
                   <div className="flex items-center space-x-3">
                     <Phone className="w-5 h-5 text-gray-500" />

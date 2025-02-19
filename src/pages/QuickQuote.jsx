@@ -1,11 +1,42 @@
 import React, { useState } from 'react';
+import SuccessModal from './SuccessModal';
 
 const QuickQuote = () => {
   const [serviceType, setServiceType] = useState('security');
+  const [isModalOpen, setIsModalOpen] = useState(false); // Add this state
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    serviceDetails: '',
+    location: ''
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
+    // Here you would typically send the form data to your backend
+    console.log('Form submitted:', formData);
+    // Show success modal
+    setIsModalOpen(true);
+    // Reset form
+    setFormData({
+      name: '',
+      company: '',
+      email: '',
+      phone: '',
+      serviceDetails: '',
+      location: ''
+    });
+    setServiceType('security');
   };
 
   return (
@@ -54,6 +85,7 @@ const QuickQuote = () => {
                 <input
                   type="text"
                   id="name"
+                  onChange={handleChange}
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                   required
                 />
@@ -63,6 +95,7 @@ const QuickQuote = () => {
                 <input
                   type="text"
                   id="company"
+                  onChange={handleChange}
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 />
               </div>
@@ -74,6 +107,7 @@ const QuickQuote = () => {
                 <input
                   type="email"
                   id="email"
+                  onChange={handleChange}
                   className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                   required
                 />
@@ -96,6 +130,7 @@ const QuickQuote = () => {
                 rows="4"
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 placeholder="Please describe your security or investigation needs..."
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
@@ -107,6 +142,7 @@ const QuickQuote = () => {
                 id="location"
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 placeholder="Service location address"
+                onChange={handleChange}
                 required
               />
             </div>
@@ -120,6 +156,11 @@ const QuickQuote = () => {
           </form>
         </div>
       </div>
+
+      <SuccessModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   );
 };

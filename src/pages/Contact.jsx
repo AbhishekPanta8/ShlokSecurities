@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SuccessModal from './SuccessModal'; // Import the success modal component
 
 const Contact = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
+    // Here you would typically send the form data to your backend
+    console.log('Form submitted:', formData);
+    // Show success modal
+    setIsModalOpen(true);
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      message: ''
+    });
   };
 
   return (
@@ -75,6 +102,8 @@ const Contact = () => {
               <input
                 type="text"
                 id="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 required
               />
@@ -84,6 +113,8 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 required
               />
@@ -93,6 +124,8 @@ const Contact = () => {
               <input
                 type="tel"
                 id="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 required
               />
@@ -102,6 +135,8 @@ const Contact = () => {
               <textarea
                 id="message"
                 rows="4"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded text-white focus:outline-none focus:border-red-600"
                 required
               ></textarea>
@@ -115,6 +150,12 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      {/* Success Modal */}
+      <SuccessModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </div>
   );
 };

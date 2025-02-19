@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import QuickQuote from './pages/QuickQuote';
 import SecurityServices from './pages/services/SecurityServices';
 import InvestigationServices from './pages/services/InvestigationServices';
+import Locations from './pages/Locations';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
             <Route path="/quick-quote" element={<QuickQuote />} />
             <Route path="/services/security" element={<SecurityServices />} />
             <Route path="/services/investigation" element={<InvestigationServices />} />
+            <Route path="/locations" element={<Locations />} />
           </Routes>
         </main>
         <Footer />

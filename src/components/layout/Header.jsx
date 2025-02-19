@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Shield } from 'lucide-react';
 import Navigation from './Navigation';
+import FullLogo from '../../assets/images/FullLogo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Header = () => {
               <div className="relative flex-shrink-0">
                 <Shield size={36} className="text-gray-300 sm:w-12 sm:h-12" />
                 <img 
-                  src="/src/assets/images/FullLogo.png"
+                  src={FullLogo}
                   alt="Security Guard"
                   className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-8 sm:h-8 object-contain"
                 />

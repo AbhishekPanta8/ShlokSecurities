@@ -27,10 +27,11 @@ const SecurityServices = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-red-600 mb-4">Security Services</h1>
-        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-          Professional security services available 24/7 throughout Ontario. Our trained security personnel
-          ensure the safety and protection of your assets and premises.
+        <h1 className="text-4xl font-bold text-red-600 mb-4">
+          Security Services in Windsor &amp; Across Ontario
+        </h1>
+        <p className="text-base text-gray-300 max-w-3xl mx-auto">
+          Looking for trusted security services in Windsor, Ontario? At Shlok Security and Investigative Services Inc., we provide professional 24/7 security solutions tailored to businesses, residential properties, events, and industrial sites. Our licensed security guards ensure the safety of your assets, property, and personnel with expertise in loss prevention, access control, mobile patrolling, and emergency response.
         </p>
       </div>
 

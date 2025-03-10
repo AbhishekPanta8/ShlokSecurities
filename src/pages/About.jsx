@@ -32,7 +32,7 @@ const MissionSection = () => {
           {/* Mission Text */}
           <div className="space-y-4 text-gray-200">
             <p className="text-base leading-relaxed opacity-90 transform transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2">
-              At <strong>Shlok Security and Investigative Services Inc.</strong>, we are a premier security company in <strong>Windsor, Ontario</strong>. Our team of <strong>licensed professionals</strong> provides top-tier security and investigative services across Ontario.
+              At <strong>Shlok Security and Investigation Services Inc.</strong>, we are a premier security company in <strong>Windsor, Ontario</strong>. Our team of <strong>licensed professionals</strong> provides top-tier security and investigative services across Ontario.
             </p>
             
             <p className="text-base leading-relaxed opacity-90 transform transition-all duration-500 delay-100 group-hover:opacity-100 group-hover:translate-x-2">

@@ -60,10 +60,11 @@ const InvestigationServices = () => {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-red-600 mb-4">Investigation Services</h1>
-        <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-          Professional investigation services conducted by licensed and experienced investigators.
-          We ensure confidentiality and thorough results for all investigations.
+        <h1 className="text-4xl font-bold text-red-600 mb-4">
+          Investigation Services in Windsor
+        </h1>
+        <p className="text-base text-gray-300 max-w-3xl mx-auto">
+          Our licensed private investigators deliver confidential, thorough investigations for corporate, legal, and personal matters.Our team in Windsor and across Ontario ensures discreet and professional investigative solutions.
         </p>
       </div>
 

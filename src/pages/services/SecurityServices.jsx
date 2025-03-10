@@ -31,7 +31,7 @@ const SecurityServices = () => {
           Security Services in Windsor &amp; Across Ontario
         </h1>
         <p className="text-base text-gray-300 max-w-3xl mx-auto">
-          Looking for trusted security services in Windsor, Ontario? At Shlok Security and Investigative Services Inc., we provide professional 24/7 security solutions tailored to businesses, residential properties, events, and industrial sites. Our licensed security guards ensure the safety of your assets, property, and personnel with expertise in loss prevention, access control, mobile patrolling, and emergency response.
+          Looking for trusted security services in Windsor, Ontario? At Shlok Security and Investigation Services Inc., we provide professional 24/7 security solutions tailored to businesses, residential properties, events, and industrial sites. Our licensed security guards ensure the safety of your assets, property, and personnel with expertise in loss prevention, access control, mobile patrolling, and emergency response.
         </p>
       </div>
 

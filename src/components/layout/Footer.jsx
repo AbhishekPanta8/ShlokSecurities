@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg sm:text-xl font-bold text-red-600">SHLOK Security & Investigation Services</h3>
             <p className="text-gray-300 text-sm sm:text-base">
-              Professional security and investigative services available 24/7 throughout Ontario, Canada.
+              Professional security and investigative services available 24/7 throughout Windsor, Canada.
             </p>
           </div>
 

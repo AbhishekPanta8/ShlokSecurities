@@ -31,7 +31,7 @@ const Home = () => {
             Professional Security & Investigation Services
           </h1>
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4 sm:px-6">
-            Providing quality Private Security and Investigative Services throughout Windsor, Ontario.
+            Providing quality Private Security and Investigative Services throughout Ontario, Canada.
             Available 24/7 for your peace of mind.
           </p>
         </div>

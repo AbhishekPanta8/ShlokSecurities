@@ -3,7 +3,7 @@ import shlokImage from '../assets/images/shlok-image.jpeg';
 
 const MissionSection = () => {
   return (
-    <div className="relative w-full min-h-[500px] overflow-hidden group">
+    <div className="relative w-full min-h-[600px] overflow-hidden group">
       {/* Background Image Container */}
       <div 
         className="absolute inset-0 w-full h-full"
@@ -19,33 +19,34 @@ const MissionSection = () => {
       </div>
 
       {/* Content Container */}
-      <div className="relative h-full w-full max-w-6xl mx-auto px-6 py-16 flex items-center">
+      <div className="relative h-full w-full max-w-6xl mx-auto px-6 py-20 flex items-center">
         <div className="w-full md:w-2/3 lg:w-1/2">
-          {/* Red Decorative Line */}
-          <div className="w-20 h-1 bg-red-600 mb-6 transform origin-left transition-transform duration-500 group-hover:scale-x-150" />
+          {/* Red decorative line */}
+          <div className="w-20 h-1 bg-red-600 mb-8 transform origin-left transition-transform duration-500 group-hover:scale-x-150" />
           
-          {/* Title */}
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 transform transition-all duration-500 group-hover:translate-x-2">
-            About Shlok Security & Investigative Services
+          {/* Title with sliding animation */}
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 transform transition-all duration-500 group-hover:translate-x-2">
+            About Us
           </h2>
           
-          {/* Mission Text */}
-          <div className="space-y-4 text-gray-200">
-            <p className="text-base leading-relaxed opacity-90 transform transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2">
-              At <strong>Shlok Security and Investigative Services Inc.</strong>, we are a premier security company in <strong>Windsor, Ontario</strong>. Our team of <strong>licensed professionals</strong> provides top-tier security and investigative services across Ontario.
+          {/* Mission text with fade-in effect */}
+          <div className="space-y-6 text-gray-200">
+            <p className="text-lg leading-relaxed opacity-90 transform transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-2">
+                Here at SHLOK SECURITY AND INVESTIGATIVE SERVICES INC. we provide quality Private
+              Security and Investigative Services throughout Ontario, Canada. We provide extensive
+              training to our employees and keep them up to date with the latest provincial and federal
+              laws and regulations. So, that our clients can be in peace of mind. For, us client’s safety and
+              satisfaction is the foremost thing for which we are always available 24/7.
             </p>
             
-            <p className="text-base leading-relaxed opacity-90 transform transition-all duration-500 delay-100 group-hover:opacity-100 group-hover:translate-x-2">
-              We ensure your safety 24/7 through comprehensive training, proactive risk management, and expert emergency response.
-            </p>
-            
-            <p className="text-base leading-relaxed opacity-90 transform transition-all duration-500 delay-200 group-hover:opacity-100 group-hover:translate-x-2">
-              From corporate security to discreet investigations, our services are designed to provide peace of mind.
+            <p className="text-lg leading-relaxed opacity-90 transform transition-all duration-500 delay-100 group-hover:opacity-100 group-hover:translate-x-2">
+            We also provide a range of services on call and in case of an emergency. So, please feel free
+            to contact us anytime.
             </p>
           </div>
           
-          {/* Decorative Element */}
-          <div className="mt-8 w-full h-px bg-gradient-to-r from-red-600/50 to-transparent transform transition-all duration-500 group-hover:scale-x-110" />
+          {/* Decorative element */}
+          <div className="mt-12 w-full h-px bg-gradient-to-r from-red-600/50 to-transparent transform transition-all duration-500 group-hover:scale-x-110" />
         </div>
       </div>
     </div>

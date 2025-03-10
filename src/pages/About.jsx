@@ -26,7 +26,7 @@ const MissionSection = () => {
           
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 transform transition-all duration-500 group-hover:translate-x-2">
-            About Shlok Security & Investigative Services
+            About Us
           </h2>
           
           {/* Mission Text */}
